@@ -25,7 +25,7 @@ button:hover {
 }
 
 .containers {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0px auto;
 }
 
@@ -35,6 +35,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0px;
 
 }
 
