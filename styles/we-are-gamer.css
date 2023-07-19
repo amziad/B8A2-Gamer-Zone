@@ -1,16 +1,28 @@
-
+.we-are-gamer-container{
+    display: flex;
+    justify-content: center;
+}
 
 
 
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
+    .we-are-gamer-container{
+        flex-direction: column;
     
+    }
+        
 }
-
 
 
 /* tablet or medium devices */
 @media screen and (min-width:576px) and (max-width: 960px) {
 
+    .we-are-gamer-container{
+        flex-direction: column;
+        
+    }
+    
+    
 }
