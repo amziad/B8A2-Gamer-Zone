@@ -1,0 +1,265 @@
+/* Universel Elements */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800;900&display=swap');
+*{
+    font-family: Work Sans;
+    
+}
+
+:root{
+    --primary-color: #FF42A5;
+    --font-secondary-color: #534C64;
+}
+
+/* Common CSS */
+.d-flex{
+    display: flex;
+}
+
+.g-logo-span{
+    color: var(--primary-color);
+}
+
+.containers {
+    max-width: 1200px;
+    margin: 20px auto;
+    
+}
+
+
+/* Navbar */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-logo-bar, 
+.nav-bar-items,
+.nav-bar,
+.nav-bar-items-follow {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.nav-logo-bar{
+    gap: 5px;
+}
+
+.nav-bar-items-follow {
+    padding-right: 30px;
+    border-radius: 8px;
+    background: #0b02231a;
+    gap: 10px;
+
+}
+
+.nav-logo-bar h2{
+    margin: auto;
+}
+
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+
+
+
+/* Header section */
+
+.btn-primary {
+    display: inline-flex;
+    padding: 21px 40px;
+    border-radius: 48px;
+    
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header-section {
+    
+    background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto;
+}
+
+.header-nain-div, .header-goat-item, .header-landing 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.header-sub-div {
+    width: 50%;
+}
+
+.header-sub-div > h2 {
+    color: #0B0223;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header-sub-div > h1 {
+    font-size: 8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.header-sub-div > img {
+    
+    height: auto;
+    width: 100%;
+}
+
+
+
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+
+    .nav-container{
+    flex-direction: column;
+    }
+    .header-goat-item, .header-landing{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-logo-bar, .nav-bar-items, .nav-bar{
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    .header-sub-div {
+        width: 100%;
+    }
+    
+    .header-nain-div {
+    flex-direction: column-reverse;
+    padding: 0px;
+    }
+
+    .nav-bar li{
+    margin: 10px 0px;
+    }
+
+    .header-section {
+        background: none;
+    }
+    .bg-1 {
+    
+        background-image: url(../images/Group\ 14.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        padding: 30px;
+    }
+    
+    .containers {
+        margin: 0px;  
+    }
+
+    .header-sub-div > h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .header-sub-div > h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px 15px;
+        border-radius: 48px;
+    }
+    
+}
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width: 960px) {
+
+    .nav-container{
+        flex-direction: column;
+    }
+    
+    .nav-logo-bar, .nav-bar-items, .nav-bar{
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    .header-sub-div {
+        width: 100%;
+    }
+
+    .header-goat-item, .header-landing{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-nain-div {
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+    
+    .nav-bar li{
+        margin: 10px 0px;
+    }
+    
+
+    .header-section {
+        background: none;
+    }
+    .bg-1 {
+    
+        background-image: url(../images/Group\ 14.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: auto;
+    }
+    .containers {
+        margin: 0px; 
+    }
+    .header-sub-div > h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .header-sub-div > h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px 15px;
+        border-radius: 48px;
+    }
+    
+
+}
