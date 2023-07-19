@@ -3,6 +3,17 @@
     justify-content: center;
 }
 
+.we-are-gamer-subcontainer{
+    width: 50%;
+}
+
+div.we-are-gamer-subcontainer img {
+    height: auto;
+    width: 100%;
+}
+
+
+
 
 
 /* responsive media queries */
@@ -10,9 +21,18 @@
 @media screen and (max-width: 576px) {
     .we-are-gamer-container{
         flex-direction: column;
-    
     }
+    .we-are-gamer-subcontainer{
+        width: 100%;
+    }
+
+    .we-are-gamer-subcontainer-sub {
         
+        align-items: center;
+        text-align: center;
+    }
+    
+       
 }
 
 
@@ -21,8 +41,14 @@
 
     .we-are-gamer-container{
         flex-direction: column;
-        
     }
     
-    
+    .we-are-gamer-subcontainer{
+        width: 100%;
+    }
+    .we-are-gamer-subcontainer-sub {
+        
+        align-items: center;
+        text-align: center;
+    }
 }
