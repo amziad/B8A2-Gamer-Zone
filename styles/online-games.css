@@ -1,0 +1,62 @@
+.funny-video-text {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h1 {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+p {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.game-card-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+
+.game-card-div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.game-card-div img {
+    width: 300px;
+    height: auto;
+}
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    .game-card-div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    .game-card-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
