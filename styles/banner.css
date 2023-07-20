@@ -4,6 +4,13 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.banner-div-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    gap: 100px;
+}
+
 .banner-img-div {
     display: flex;
     justify-content: flex-end;
@@ -14,12 +21,12 @@
     max-height: 600px;
 }
 
-.banner-image img {
+.banner-image img, .banner-image-2 img {
     width: 500px;
     height: auto;
 }
 
-.banner-image div img {
+.banner-image div img, .banner-image-2 div img  {
     width: 250px;
     height: auto;
 }
@@ -31,8 +38,23 @@
     left: -120px;
 }
 
+.banner-image-2 div {
+    position: relative;
+    z-index: 10;
+    top: -200px;
+    right: -300px;
+}
+
 .section-title-responsive {
     text-align: right;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.section-title-responsive-2{
+    text-align: left;
     padding-right: 100px;
     display: flex;
     flex-direction: column;
@@ -48,7 +70,7 @@
 /* mobile devices */
 @media screen and (max-width: 576px) {
 
-    .section-title-responsive {
+    .section-title-responsive, .section-title-responsive-2 {
         text-align: center;
         padding-right: 0px;
     }
@@ -59,9 +81,22 @@
         justify-items: center;
     }
 
+
+    
+
     .banner-div {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .banner-div-2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 0px;
+    }
+
 
     .banner-img-div img {
         width: 300px;
@@ -78,11 +113,27 @@
         left: -50px;
     }
 
-    .banner-p {
+    
+
+    .banner-image-2 div img {
+        width: 150px;
+        height: auto;
+    }
+
+    .banner-image-2 div {
+        position: relative;
+        top: -120px;
+        left: 200px;
+    }
+    
+   
+    
+    .banner-p, .banner-p-2 {
         width: 353px;
         margin: auto;
         font-size: medium;
     }
+    
 
 }
 
@@ -90,7 +141,7 @@
 /* tablet or medium devices */
 @media screen and (min-width:576px) and (max-width: 960px) {
 
-    .section-title-responsive {
+    .section-title-responsive, .section-title-responsive-2 {
         text-align: center;
         padding-right: 0px;
     }
@@ -114,13 +165,32 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .banner-div-2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 0px;
+    }
+
     .banner-image div {
         position: relative;
         top: -150px;
         left: -100px;
     }
+    .banner-image-2 div img {
+        width: 218px;
+        height: auto;
+    }
 
-    .banner-p {
+    .banner-image-2 div {
+        position: relative;
+        top: -120px;
+        left: 300px;
+    }
+    
+    .banner-p, .banner-p-2  {
         width: 478px;
         margin: auto;
     }
